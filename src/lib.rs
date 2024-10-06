@@ -6,7 +6,6 @@ use anyhow::Result;
 pub use api::*;
 use bytes::Bytes;
 use derive_builder::Builder;
-use once_cell::sync::Lazy;
 use reqwest::{Client, Response};
 use reqwest_middleware::{ClientBuilder, ClientWithMiddleware, RequestBuilder};
 use reqwest_retry::policies::ExponentialBackoff;
